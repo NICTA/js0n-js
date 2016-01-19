@@ -1,0 +1,27 @@
+{
+  "name": "js0n",
+  "version": "0.0.0",
+  "description": "A(nother?) simple binary json encoding format that is optimised for performance.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --use_strict test.js",
+    "workDev": "babel src/ --watch --out-dir .",
+    "workTest": "nodemon test.js",
+    "browserify": "browserify -e index.js -s js0n -o js0n.js"
+  },
+  "keywords": [
+    "binary",
+    "json",
+    "js0n",
+    "optimized",
+    "performance",
+    "compact",
+    "fast"
+  ],
+  "author": "Nahid Akbar",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-transform-export-extensions": "^6.0.14",
+    "babel-preset-es2015": "^6.1.2"
+  }
+}
